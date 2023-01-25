@@ -13,6 +13,7 @@ import web1 from "../public/web1.png";
 import working from "../public/working.jpg";
 
 import 'animate.css';
+import Link from "next/link";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -133,9 +134,8 @@ export default function Home() {
                 <p></p>
               </div>
               <div className="text-center    ">
-                <a href="/project">
+                <Link href={'/project'} />
                   <button className="button font-bold "><span>Read Case Study</span></button>
-                </a>
               </div>
             </div>
             <div>
